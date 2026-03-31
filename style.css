@@ -152,11 +152,36 @@ img {
   background-repeat: no-repeat;
 }
 
+.hero-inner {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
 .hero-copy {
   position: relative;
   z-index: 1;
   max-width: 62ch;
   padding: 1.25rem;
+}
+
+.page-hero {
+  width: 100%;
+  min-height: min(62svh, 640px);
+  display: grid;
+  align-items: end;
+  background-image:
+    linear-gradient(rgba(4, 10, 20, 0.58), rgba(4, 10, 20, 0.74)),
+    var(--page-hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-hero-content {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 2rem 1rem 2.4rem;
 }
 
 .eyebrow {

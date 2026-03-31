@@ -10,8 +10,15 @@
   </head>
   <body data-page="contact.html">
     <div id="site-header"></div>
-    <main class="container section split">
-      <section class="panel reveal">
+    <main>
+      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=80');">
+        <div class="page-hero-content reveal">
+          <p class="eyebrow">Reach Out Anytime</p>
+          <h1 class="section-title">Contact & Appointment</h1>
+        </div>
+      </section>
+      <section class="container section split">
+        <section class="panel reveal">
         <h1 class="section-title">Contact & Appointment</h1>
         <form class="form-grid">
           <label>Full Name<input type="text" placeholder="Enter full name" required></label>
@@ -27,10 +34,11 @@
           <label class="full">Message<textarea rows="5" placeholder="Write your message"></textarea></label>
           <button class="btn ripple-btn full cta-shine-button" type="submit">Send Request</button>
         </form>
+        </section>
+        <aside class="reveal">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80" alt="Medical clinic" loading="lazy">
+        </aside>
       </section>
-      <aside class="reveal">
-        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80" alt="Medical clinic" loading="lazy">
-      </aside>
     </main>
     <div id="site-footer"></div>
     <script type="module" src="index.js"></script>

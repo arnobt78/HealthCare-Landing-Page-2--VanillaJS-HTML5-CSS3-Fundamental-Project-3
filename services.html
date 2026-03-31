@@ -10,8 +10,14 @@
   </head>
   <body data-page="services.html">
     <div id="site-header"></div>
-    <main class="container section">
-      <section class="section-head reveal">
+    <main>
+      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=2200&q=80');">
+        <div class="page-hero-content reveal">
+          <p class="eyebrow">Healthcare Services</p>
+          <h1 class="section-title">All Clinical Services</h1>
+        </div>
+      </section>
+      <section class="container section-head section reveal">
         <h1 class="section-title">All Clinical Services</h1>
         <button class="btn ripple-btn" type="button" data-dropdown-trigger="filters">Filter Services</button>
         <div class="dropdown" data-dropdown="filters">
@@ -20,8 +26,8 @@
           <p class="badge">Telehealth</p>
         </div>
       </section>
-      <section id="all-services-grid" class="card-grid section"></section>
-      <section class="section panel reveal">
+      <section id="all-services-grid" class="container card-grid section"></section>
+      <section class="container section panel reveal">
         <h2 class="section-title">Pricing Table (Demo)</h2>
         <div class="table-wrap">
           <table>
