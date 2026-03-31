@@ -1,188 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>health care</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <title>Healthcare Pro | Home</title>
+    <meta name="description" content="Modern healthcare landing showcase project built with vanilla HTML, CSS and JavaScript.">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
-    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <section class="background">
-        <nav class="navbar">
-            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-            <div class="navbar-items h-class">
-                <ul class="nav v-class">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">COURSE</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
-            </div>
-            <div class="burger">&#9776</div>
-        </nav>
-        <!-- _________main-sec -->
-        <div class="main">
-            <div class="text-box">
-                 <h1>your health is our first priority</h1>
-                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quasi dignissimos ab molestiae porro possimus consequatur atque id harum 
-                    laudantium in eveniet aliquid et eos, quam vel provident odit ea.</p>
-                <a href="" class="btn btn1">visit to know more</a>
-            </div>
-            <div class="box">
-                <h1>appointment</h1>
-                <input type="text" name="name" placeholder="name">
-                <input type="text" name="f_nam" placeholder="father name">
-                <input type="email" name="email" placeholder="email">
-                <input type="number" name="number" placeholder="number">
-                <a href="" class="btn btn2">book appointment</a>
-            </div>
+  </head>
+  <body data-page="index.html">
+    <div id="site-header"></div>
+    <main>
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Modern Healthcare, Human First</p>
+          <h1>Professional Healthcare Showcase For Learning Real UI Fundamentals</h1>
+          <p>Learn how real-world landing pages are built with reusable components, animations, responsive layout, and production-ready deployment setup.</p>
+          <div class="btn-row cta-shine-wrap">
+            <a class="btn ripple-btn cta-shine-button" href="services.html">Explore Services</a>
+            <a class="btn btn-ghost ripple-btn" href="contact.html">Book Appointment</a>
+          </div>
         </div>
-    </section>
-    <!-- ____________services -->
-    <section class="services">
-        <h1 class="heading">Our services</h1>
-        <div class="row">
+        <div class="hero-media reveal">
+          <img src="https://source.unsplash.com/featured/?hospital,doctor" alt="Healthcare professionals" loading="lazy" data-parallax="0.08">
+        </div>
+      </section>
 
-            <div class="box1">
-                <i class="fas fa-tooth"></i>
-                <h2>dentistry</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-user-nurse"></i>
-                <h2>nursing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-tablets"></i>
-                <h2>medicine</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
+      <section class="container section">
+        <h2 class="section-title reveal">Performance Snapshot</h2>
+        <div id="stats-grid" class="stats-grid"></div>
+      </section>
 
-        <div class="row">
+      <section class="container section">
+        <div class="section-head reveal">
+          <h2 class="section-title">Featured Services</h2>
+          <a class="link-btn" href="services.html">See all services</a>
+        </div>
+        <div id="services-grid" class="card-grid"></div>
+      </section>
 
-            <div class="box1">
-                <i class="fas fa-prescription-bottle"></i>
-                <h2>pharmacy</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-x-ray"></i>
-                <h2>audiology</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-eye"></i>
-                <h2>optometry</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+      <section class="container section panel reveal">
+        <h2 class="section-title">Department Availability</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Department</th><th>Team</th><th>Availability</th></tr>
+            </thead>
+            <tbody id="departments-body"></tbody>
+          </table>
         </div>
-    </section>
-    <!-- __________quality -->
-    <section class="quality">
-        <h1 class="heading">why choose our healthcare clinic</h1>
-        <div class="row">
-            <div class="box2">
-                <i class="fas fa-user-plus"></i>
-                <h2>24/7 available</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box2">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h2>medical cycle care</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box2">
-                <i class="fas fa-award"></i>
-                <h2>quality control</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </section>
-    <!-- _______________about -->
-    <section class="about">
-        <h1 class="heading">about us</h1>
-        <div class="row row1">
-            <div class="left">
-                <img src="img/pic2.jpg" alt="">
-            </div>
-            <div class="right">
-                <h1>inspiring hope, <br>innovating health</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Animi explicabo quaerat impedit voluptate magnam culpa vitae. Asperiores nihil quasi
-                     culpa placeat commodi odit, quod, laboriosam dolor nesciunt totam vero! Natus.
-                Ab repellendus earum atque, aliquam sequi voluptatum neque fugit quisquam consequuntur 
-                cupiditate, esse facilis magni iusto consequatur error officia doloremque, praesentium molestiae 
-                unde vero! Praesentium nobis nisi quia asperiores illum.</p>
-                <button class="btn btn3">explore more</button>
-            </div>
-        </div>
-    </section>
-    <!-- ___________departments -->
-    <section class="department">
-        <h1 class="heading">our departments</h1>
-        <div class="row">
-             <div class="box3">
-                <h1>pathology</h1>
-             </div>
-             <div class="box3">
-                <h1>pharmocology</h1>
-             </div>
-             <div class="box3">
-                <h1>radiology</h1>
-             </div>
-             <div class="box3">
-                <h1>anatomy</h1>
-             </div>
-        </div>
-    </section>
-    <!-- _______________footer -->
-    <footer>
-        <div class="footer-sec">
-            <div class="sec">
-                <div class="f_box">
-                    <h2>contact</h2>
-                    <p>email</p>
-                    <p>youtube</p>
-                    <p>facebook</p>
-                    <p>twitter</p>
-                </div>
-                <div class="f_box">
-                    <h2>departments</h2>
-                    <p>radiology</p>
-                    <p>pharmocology</p>
-                    <p>pathology</p>
-                    <p>anatomy</p>
-                </div>
-            </div>
+      </section>
 
-            <div class="sec">
-                <div class="f_box">
-                    <h2>address</h2>
-                    <p>Frankfurt<br>Germany</p>
-                    <p>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-snapchat"></i>
-                        <i class="fab fa-whatsapp"></i>
-                    </p>
-                </div>
-                <div class="f_box">
-                    <h2>other facilities</h2>
-                    <p>24/7 services</p>
-                    <p>quality control</p>
-                    <p>full cycle medical care</p>
-                </div>
-            </div>
+      <section class="container section">
+        <h2 class="section-title reveal">Care Journey Tabs</h2>
+        <div class="tabs reveal">
+          <button class="tab is-active" type="button" data-tab-group="journey" data-tab-target="consult">Consultation</button>
+          <button class="tab" type="button" data-tab-group="journey" data-tab-target="diagnosis">Diagnosis</button>
+          <button class="tab" type="button" data-tab-group="journey" data-tab-target="recovery">Recovery</button>
         </div>
-        <p class="para">copyright @ Arnob Mahmud</p>
-    </footer>
-    <script src="index.js"></script>
-</body>
+        <article class="tab-panel is-active reveal" data-panel-group="journey" data-panel="consult">
+          <p>Get guided onboarding, case review, and specialist assignment in one smooth flow.</p>
+        </article>
+        <article class="tab-panel reveal" data-panel-group="journey" data-panel="diagnosis">
+          <p>Integrated diagnostics with imaging, pathology, and physician collaboration.</p>
+        </article>
+        <article class="tab-panel reveal" data-panel-group="journey" data-panel="recovery">
+          <p>Recovery plans include medication tracking, telehealth check-ins, and education.</p>
+        </article>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>

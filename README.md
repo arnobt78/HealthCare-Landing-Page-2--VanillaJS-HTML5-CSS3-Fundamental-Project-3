@@ -1,4 +1,4 @@
-# Health Care - Javascript Website Template (Design-2)
+# Framework-free Health Care Landing Page 2 - JavaScript (Vanilla), HTML5, CSS3 Fundamental Project 3 (Framework-free SPA)
 
 ![Screenshot 2025-07-28 at 17 30 18](https://github.com/user-attachments/assets/30d4a466-ddc0-472b-b4fc-6b8f422a6c7f)
 ![Screenshot 2025-07-28 at 17 31 03](https://github.com/user-attachments/assets/e8f17155-ce35-41a1-909c-f7c0a2d8a655)
@@ -50,7 +50,7 @@ health-website-main/
 ├── index.html         # Main HTML file
 ├── style.css          # Stylesheet
 ├── index.js           # JavaScript for navbar interactivity
-├── img/               # Images and icons
+├── public/images/               # Images and icons
 │   ├── favicon.ico
 │   ├── logo.png
 │   ├── pic1.jpg
@@ -108,18 +108,18 @@ To view the website locally, follow these steps:
 ### index.js
 
 - Handles burger menu click to toggle navigation on mobile:
-  
+
   ```js
-  burger=document.querySelector('.burger')
-  navbarItems=document.querySelector('.navbar-items')
-  nav=document.querySelector('.nav')
-  burger.addEventListener('click',()=>{
-     navbarItems.classList.toggle('h-class')
-     nav.classList.toggle('v-class')
-  })
+  burger = document.querySelector(".burger");
+  navbarItems = document.querySelector(".navbar-items");
+  nav = document.querySelector(".nav");
+  burger.addEventListener("click", () => {
+    navbarItems.classList.toggle("h-class");
+    nav.classList.toggle("v-class");
+  });
   ```
 
-### img/
+### public/images/
 
 - Contains favicon, logo, and section images.
 

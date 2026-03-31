@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Pro | Contact</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="contact.html">
+    <div id="site-header"></div>
+    <main class="container section split">
+      <section class="panel reveal">
+        <h1 class="section-title">Contact & Appointment</h1>
+        <form class="form-grid">
+          <label>Full Name<input type="text" placeholder="Enter full name" required></label>
+          <label>Email<input type="email" placeholder="Enter email" required></label>
+          <label>Phone<input type="tel" placeholder="Enter phone number"></label>
+          <label>Department
+            <select>
+              <option>General Care</option>
+              <option>Cardiology</option>
+              <option>Dentistry</option>
+            </select>
+          </label>
+          <label class="full">Message<textarea rows="5" placeholder="Write your message"></textarea></label>
+          <button class="btn ripple-btn full cta-shine-button" type="submit">Send Request</button>
+        </form>
+      </section>
+      <aside class="reveal">
+        <img src="https://source.unsplash.com/featured/?medical,clinic" alt="Medical clinic" loading="lazy">
+      </aside>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

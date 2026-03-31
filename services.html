@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Pro | Services</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="services.html">
+    <div id="site-header"></div>
+    <main class="container section">
+      <section class="section-head reveal">
+        <h1 class="section-title">All Clinical Services</h1>
+        <button class="btn ripple-btn" type="button" data-dropdown-trigger="filters">Filter Services</button>
+        <div class="dropdown" data-dropdown="filters">
+          <p class="badge">General Care</p>
+          <p class="badge">Emergency</p>
+          <p class="badge">Telehealth</p>
+        </div>
+      </section>
+      <section id="all-services-grid" class="card-grid section"></section>
+      <section class="section panel reveal">
+        <h2 class="section-title">Pricing Table (Demo)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Plan</th><th>Features</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr><td>Basic Care</td><td>Consultation + Follow-up</td><td>$39</td></tr>
+              <tr><td>Family Care</td><td>Up to 4 Members</td><td>$99</td></tr>
+              <tr><td>Premium Care</td><td>Priority + Telehealth</td><td>$149</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
