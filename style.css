@@ -133,11 +133,30 @@ img {
 }
 
 .hero {
-  min-height: min(90vh, 860px);
+  min-height: min(100svh, 920px);
   display: grid;
   align-items: center;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
+  position: relative;
+  border-radius: 1.3rem;
+  overflow: hidden;
+}
+
+.hero-bg {
+  background-image:
+    linear-gradient(rgba(4, 10, 20, 0.68), rgba(4, 10, 20, 0.74)),
+    var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 62ch;
+  padding: 1.25rem;
 }
 
 .eyebrow {
@@ -225,6 +244,13 @@ img {
 .card i {
   color: var(--primary);
   font-size: 1.4rem;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
 }
 
 .badge {

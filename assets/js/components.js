@@ -54,6 +54,7 @@ export function renderFooter() {
 export function serviceCard(item) {
   return `
     <article class="card reveal">
+      <img class="card-image" src="${item.img}" alt="${item.title}" loading="lazy">
       <i class="fas ${item.icon}"></i>
       <h3>${item.title}</h3>
       <p>${item.desc}</p>

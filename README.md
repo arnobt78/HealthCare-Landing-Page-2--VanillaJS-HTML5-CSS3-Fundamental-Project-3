@@ -1,16 +1,8 @@
 # Framework-free Health Care Landing Page 2 - JavaScript (Vanilla), HTML5, CSS3 Fundamental Project 3 (Framework-free SPA)
 
-![Screenshot 2025-07-28 at 17 30 18](https://github.com/user-attachments/assets/30d4a466-ddc0-472b-b4fc-6b8f422a6c7f)
-![Screenshot 2025-07-28 at 17 31 03](https://github.com/user-attachments/assets/e8f17155-ce35-41a1-909c-f7c0a2d8a655)
-![Screenshot 2025-07-28 at 17 31 26](https://github.com/user-attachments/assets/1c21f880-11ef-4c17-b21c-32d785543764)
+A responsive, modern health care website built with HTML, CSS, and JavaScript. It is designed for clinics, hospitals, or health-related organizations to showcase their services, departments, and contact information. The project demonstrates best practices in web design, UI/UX, and responsive layouts, making it a great learning resource for beginners and intermediate developers.
 
----
-
-## Project Summary
-
-This is a responsive, modern health care website built with HTML, CSS, and JavaScript. It is designed for clinics, hospitals, or health-related organizations to showcase their services, departments, and contact information. The project demonstrates best practices in web design, UI/UX, and responsive layouts, making it a great learning resource for beginners and intermediate developers.
-
-- **Live Demo:** [https://healthcare-template-2.netlify.app/](https://healthcare-template-2.netlify.app/)
+- **Live Demo:** [https://healthcare-ui-2.vercel.app/](https://healthcare-ui-2.vercel.app/)
 
 ---
 

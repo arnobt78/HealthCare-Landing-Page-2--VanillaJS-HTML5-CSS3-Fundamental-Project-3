@@ -19,12 +19,42 @@ export const stats = [
 ];
 
 export const services = [
-  { icon: "fa-heartbeat", title: "Cardiology", desc: "Early diagnosis, treatment planning, and heart health follow-up care." },
-  { icon: "fa-tooth", title: "Dentistry", desc: "Preventive and restorative oral care for children, adults, and seniors." },
-  { icon: "fa-user-nurse", title: "Nursing", desc: "Compassion-driven nursing support with continuous patient monitoring." },
-  { icon: "fa-x-ray", title: "Radiology", desc: "Fast imaging support with accurate reports for better treatment decisions." },
-  { icon: "fa-pills", title: "Pharmacy", desc: "Safe medicine distribution and counseling by licensed professionals." },
-  { icon: "fa-brain", title: "Neurology", desc: "Specialized brain and nerve treatment with modern protocols." },
+  {
+    icon: "fa-heartbeat",
+    title: "Cardiology",
+    desc: "Early diagnosis, treatment planning, and heart health follow-up care.",
+    img: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: "fa-tooth",
+    title: "Dentistry",
+    desc: "Preventive and restorative oral care for children, adults, and seniors.",
+    img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: "fa-user-nurse",
+    title: "Nursing",
+    desc: "Compassion-driven nursing support with continuous patient monitoring.",
+    img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: "fa-x-ray",
+    title: "Radiology",
+    desc: "Fast imaging support with accurate reports for better treatment decisions.",
+    img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: "fa-pills",
+    title: "Pharmacy",
+    desc: "Safe medicine distribution and counseling by licensed professionals.",
+    img: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: "fa-brain",
+    title: "Neurology",
+    desc: "Specialized brain and nerve treatment with modern protocols.",
+    img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80",
+  },
 ];
 
 export const departments = [
