@@ -59,19 +59,79 @@ function setupRipple() {
   });
 }
 
+/** Switch visible tab panel + sync aria-selected on tab buttons */
+function activateTab(group, target) {
+  document.querySelectorAll(`[data-tab-group="${group}"]`).forEach((btn) => {
+    btn.classList.remove("is-active");
+    if (btn.getAttribute("role") === "tab") btn.setAttribute("aria-selected", "false");
+  });
+  document.querySelectorAll(`[data-panel-group="${group}"]`).forEach((panel) => panel.classList.remove("is-active"));
+
+  const tab = document.querySelector(`[data-tab-group="${group}"][data-tab-target="${target}"]`);
+  if (tab) {
+    tab.classList.add("is-active");
+    if (tab.getAttribute("role") === "tab") tab.setAttribute("aria-selected", "true");
+  }
+  const panel = document.querySelector(`[data-panel-group="${group}"][data-panel="${target}"]`);
+  if (panel) panel.classList.add("is-active");
+}
+
+const tabAutoplayTimers = new Map();
+
+function clearTabAutoplay(group) {
+  const id = tabAutoplayTimers.get(group);
+  if (id != null) window.clearInterval(id);
+  tabAutoplayTimers.delete(group);
+}
+
+/** Rotate panels on an interval; pauses when user prefers reduced motion */
+function startTabAutoplay(group) {
+  const wrap = document.querySelector(`.tabs[data-tab-autoplay="${group}"]`);
+  if (!wrap) return;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  clearTabAutoplay(group);
+
+  const targets = Array.from(
+    document.querySelectorAll(`button[data-tab-group="${group}"][data-tab-target]`),
+  ).map((b) => b.getAttribute("data-tab-target"));
+
+  if (targets.length < 2) return;
+
+  const ms = Number(wrap.getAttribute("data-tab-interval")) || 5500;
+
+  const tick = () => {
+    const active = document.querySelector(`button[data-tab-group="${group}"].is-active`);
+    const cur = active?.getAttribute("data-tab-target");
+    let i = targets.indexOf(cur);
+    if (i < 0) i = 0;
+    activateTab(group, targets[(i + 1) % targets.length]);
+  };
+
+  tabAutoplayTimers.set(group, window.setInterval(tick, ms));
+}
+
 function setupTabs() {
   const tabs = document.querySelectorAll("[data-tab-target]");
   if (!tabs.length) return;
+
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       const group = tab.getAttribute("data-tab-group");
       const target = tab.getAttribute("data-tab-target");
-      document.querySelectorAll(`[data-tab-group="${group}"]`).forEach((btn) => btn.classList.remove("is-active"));
-      document.querySelectorAll(`[data-panel-group="${group}"]`).forEach((panel) => panel.classList.remove("is-active"));
-      tab.classList.add("is-active");
-      const panel = document.querySelector(`[data-panel="${target}"]`);
-      if (panel) panel.classList.add("is-active");
+      activateTab(group, target);
+
+      if (document.querySelector(`.tabs[data-tab-autoplay="${group}"]`)) {
+        clearTabAutoplay(group);
+        startTabAutoplay(group);
+      }
     });
+  });
+
+  document.querySelectorAll(".tabs[data-tab-autoplay]").forEach((el) => {
+    const group = el.getAttribute("data-tab-autoplay");
+    if (group) startTabAutoplay(group);
   });
 }
 

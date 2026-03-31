@@ -12,10 +12,10 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { label: "Patients Served", value: "50k+" },
-  { label: "Expert Doctors", value: "120+" },
-  { label: "Satisfaction Rate", value: "98%" },
-  { label: "Emergency Response", value: "24/7" },
+  { label: "Patients Served", value: "50k+", icon: "fa-users" },
+  { label: "Expert Doctors", value: "120+", icon: "fa-user-md" },
+  { label: "Satisfaction Rate", value: "98%", icon: "fa-smile" },
+  { label: "Emergency Response", value: "24/7", icon: "fa-ambulance" },
 ];
 
 export const services = [
@@ -57,12 +57,16 @@ export const services = [
   },
 ];
 
+/** Department rows for home “Availability” — icons + labels for richer card UI (8 for a 4×2 grid on desktop) */
 export const departments = [
-  ["Pathology", "22 Specialists", "Mon-Sat"],
-  ["Pharmacology", "18 Specialists", "Mon-Sun"],
-  ["Radiology", "15 Specialists", "24/7"],
-  ["Anatomy", "10 Specialists", "Mon-Fri"],
-  ["Pediatrics", "14 Specialists", "Mon-Sun"],
+  { name: "Pathology", team: "22 Specialists", availability: "Mon-Sat", icon: "fa-microscope" },
+  { name: "Pharmacology", team: "18 Specialists", availability: "Mon-Sun", icon: "fa-pills" },
+  { name: "Radiology", team: "15 Specialists", availability: "24/7", icon: "fa-x-ray" },
+  { name: "Anatomy", team: "10 Specialists", availability: "Mon-Fri", icon: "fa-heartbeat" },
+  { name: "Pediatrics", team: "14 Specialists", availability: "Mon-Sun", icon: "fa-baby" },
+  { name: "Orthopedics", team: "12 Specialists", availability: "Mon-Fri", icon: "fa-notes-medical" },
+  { name: "Dermatology", team: "9 Specialists", availability: "Mon-Sat", icon: "fa-allergies" },
+  { name: "Emergency", team: "28 Specialists", availability: "24/7", icon: "fa-medkit" },
 ];
 
 export const faqs = [

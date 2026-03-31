@@ -27,8 +27,17 @@ export function renderHeader(activePage) {
 }
 
 export function renderFooter() {
-  const year = new Date().getFullYear();
   return `
+    <section class="footer-banner">
+      <div class="footer-banner__visual" role="img" aria-label="Healthcare team working together">
+        <div class="footer-banner__inner container">
+          <div class="footer-banner__content">
+            <h2>Your Health, Our Ongoing Commitment</h2>
+            <p>From preventive checkups to specialist support, our teams work together to deliver clear guidance, compassionate care, and better outcomes for every patient.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
@@ -37,28 +46,58 @@ export function renderFooter() {
         </div>
         <div>
           <h4>Contact</h4>
-          <p>Email: hello@healthcarepro.com</p>
-          <p>Phone: +1 (555) 201-2200</p>
+          <p>Email: info@email.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
         </div>
         <div>
           <h4>Address</h4>
-          <p>Frankfurt, Germany</p>
+          <p>123 Main St, Anytown, USA</p>
           <p>Open Daily: 24/7 Emergency</p>
         </div>
       </div>
-      <p class="copyright">Copyright ${year} HealthCare Pro</p>
+      <div class="container copyright-wrap">
+        <p class="copyright">&copy; ${new Date().getFullYear()}. All rights reserved.</p>
+      </div>
     </footer>
   `;
 }
 
-export function serviceCard(item) {
-  return `
-    <article class="card reveal">
+/**
+ * Service card. Pass linkHref (e.g. "services.html") to wrap in a link for featured/home grids.
+ */
+export function serviceCard(item, options = {}) {
+  const { linkHref } = options;
+  const body = `
       <img class="card-image" src="${item.img}" alt="${item.title}" loading="lazy">
-      <i class="fas ${item.icon}"></i>
-      <h3>${item.title}</h3>
+      <div class="service-card-head">
+        <i class="fas ${item.icon}"></i>
+        <h3>${item.title}</h3>
+      </div>
       <p>${item.desc}</p>
       <span class="badge">Trusted Care</span>
+  `;
+  if (linkHref) {
+    return `
+      <a href="${linkHref}" class="card-link ripple-btn reveal">
+        <span class="card card--interactive">${body}</span>
+      </a>
+    `;
+  }
+  return `<article class="card reveal">${body}</article>`;
+}
+
+/** Rich department row for the home “Availability” grid (not a plain table). */
+export function departmentCard(dept) {
+  return `
+    <article class="department-card reveal" role="listitem">
+      <div class="department-card__icon" aria-hidden="true">
+        <i class="fas ${dept.icon}"></i>
+      </div>
+      <div class="department-card__body">
+        <h3 class="department-card__title">${dept.name}</h3>
+        <p class="department-card__meta"><i class="fas fa-user-md" aria-hidden="true"></i> ${dept.team}</p>
+        <span class="department-card__badge"><i class="fas fa-clock" aria-hidden="true"></i> ${dept.availability}</span>
+      </div>
     </article>
   `;
 }

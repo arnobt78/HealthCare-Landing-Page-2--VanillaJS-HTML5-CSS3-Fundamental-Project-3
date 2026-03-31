@@ -21,9 +21,14 @@
             <p class="eyebrow">Modern Healthcare, Human First</p>
             <h1>Professional Healthcare Showcase For Learning Real UI Fundamentals</h1>
             <p>Learn how real-world landing pages are built with reusable components, animations, responsive layout, and production-ready deployment setup.</p>
-            <div class="btn-row cta-shine-wrap">
-              <a class="btn ripple-btn cta-shine-button" href="services.html">Explore Services</a>
-              <a class="btn btn-ghost ripple-btn" href="contact.html">Book Appointment</a>
+            <!-- Shine wraps each button only — not the whole row (see docs/RIPPLE_BUTTON_EFFECT.md) -->
+            <div class="btn-row">
+              <span class="cta-shine-wrap">
+                <a class="btn ripple-btn cta-shine-button" href="services.html">Explore Services</a>
+              </span>
+              <span class="cta-shine-wrap cta-shine-wrap--ghost">
+                <a class="btn btn-ghost ripple-btn cta-shine-button" href="contact.html">Book Appointment</a>
+              </span>
             </div>
           </div>
         </div>
@@ -31,44 +36,63 @@
 
       <section class="container section">
         <h2 class="section-title reveal">Performance Snapshot</h2>
+        <p class="section-lead reveal">A quick look at the trust our community places in coordinated, compassionate care—from first visit to follow-up.</p>
         <div id="stats-grid" class="stats-grid"></div>
       </section>
 
       <section class="container section">
         <div class="section-head reveal">
-          <h2 class="section-title">Featured Services</h2>
+          <div class="section-head-text">
+            <h2 class="section-title">Featured Services</h2>
+            <p class="section-lead section-lead--tight">Explore core specialties built for learning reusable UI patterns—each card links through to the full services page.</p>
+          </div>
           <a class="link-btn" href="services.html">See all services</a>
         </div>
         <div id="services-grid" class="card-grid"></div>
       </section>
 
       <section class="container section panel reveal">
-        <h2 class="section-title">Department Availability</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Department</th><th>Team</th><th>Availability</th></tr>
-            </thead>
-            <tbody id="departments-body"></tbody>
-          </table>
+        <div class="section-head">
+          <div class="section-head-text">
+            <h2 class="section-title">Department Availability</h2>
+            <p class="section-lead section-lead--tight">Teams and hours at a glance—structured so beginners can practice list-to-card layout upgrades without losing clarity.</p>
+          </div>
+          <a class="link-btn" href="departments.html">See all departments</a>
         </div>
+        <div id="departments-grid" class="department-grid" role="list"></div>
       </section>
 
       <section class="container section">
         <h2 class="section-title reveal">Care Journey Tabs</h2>
-        <div class="tabs reveal">
-          <button class="tab is-active" type="button" data-tab-group="journey" data-tab-target="consult">Consultation</button>
-          <button class="tab" type="button" data-tab-group="journey" data-tab-target="diagnosis">Diagnosis</button>
-          <button class="tab" type="button" data-tab-group="journey" data-tab-target="recovery">Recovery</button>
+        <p class="section-lead reveal">Follow the patient path from first conversation to long-term wellness—each tab packs multiple learning-friendly bullet points.</p>
+        <div class="tabs reveal" data-tab-autoplay="journey" data-tab-interval="5500" role="tablist" aria-label="Care journey steps">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab-group="journey" data-tab-target="consult">Consultation</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab-group="journey" data-tab-target="diagnosis">Diagnosis</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab-group="journey" data-tab-target="recovery">Recovery</button>
         </div>
         <article class="tab-panel is-active reveal" data-panel-group="journey" data-panel="consult">
           <p>Get guided onboarding, case review, and specialist assignment in one smooth flow.</p>
+          <ul class="tab-panel-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Intake forms and goals captured before you meet your clinician.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Triage routes urgent concerns to the right department fast.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Care coordinators explain next steps so nothing feels rushed.</li>
+          </ul>
         </article>
         <article class="tab-panel reveal" data-panel-group="journey" data-panel="diagnosis">
           <p>Integrated diagnostics with imaging, pathology, and physician collaboration.</p>
+          <ul class="tab-panel-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Imaging and labs sync to one timeline for your care team.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Second-opinion pathways supported when cases need extra depth.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Plain-language summaries help you understand results with confidence.</li>
+          </ul>
         </article>
         <article class="tab-panel reveal" data-panel-group="journey" data-panel="recovery">
           <p>Recovery plans include medication tracking, telehealth check-ins, and education.</p>
+          <ul class="tab-panel-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Personalized rehab and medication reminders keep you on track.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Telehealth touchpoints reduce travel while staying connected.</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Prevention tips extend wellness beyond the clinic visit.</li>
+          </ul>
         </article>
       </section>
     </main>
