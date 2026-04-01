@@ -4,7 +4,19 @@ A responsive, modern health care website built with HTML, CSS, and JavaScript. I
 
 - **Live Demo:** [https://healthcare-ui-2.vercel.app/](https://healthcare-ui-2.vercel.app/)
 
----
+![Healthcare UI Screenshot 1](https://github.com/user-attachments/assets/3b994412-c2e7-4a97-a3f1-c6350277ee26)
+![Healthcare UI Screenshot 2](https://github.com/user-attachments/assets/e9e63890-bc6d-410d-95c7-874fc1415412)
+![Healthcare UI Screenshot 3](https://github.com/user-attachments/assets/4606a578-964a-427a-87d1-88fdf6cd7f5c)
+![Healthcare UI Screenshot 4](https://github.com/user-attachments/assets/8bc65c39-437b-441c-8644-fac1ae4f6a66)
+![Healthcare UI Screenshot 5](https://github.com/user-attachments/assets/cf18f3c3-ab5c-476b-ad7f-d4c7011de1d4)
+![Healthcare UI Screenshot 6](https://github.com/user-attachments/assets/b9119283-4040-4ebc-8832-b1e24db29783)
+![Healthcare UI Screenshot 7](https://github.com/user-attachments/assets/aed0852b-43f5-4a5f-bf87-80e13753f5ee)
+![Healthcare UI Screenshot 8](https://github.com/user-attachments/assets/52253a49-6c2e-465c-af41-8c12ab2a5f83)
+![Healthcare UI Screenshot 9](https://github.com/user-attachments/assets/0e97c83c-606d-4132-a1f5-983a94ea6a07)
+![Healthcare UI Screenshot 10](https://github.com/user-attachments/assets/9b149c07-ebe0-42c2-a4de-cd423e115af4)
+![Healthcare UI Screenshot 11](https://github.com/user-attachments/assets/c2c470a9-db09-4b9f-940c-26b589d3ba6f)
+![Healthcare UI Screenshot 12](https://github.com/user-attachments/assets/384c3236-c9f9-4f38-82f2-90ffec29658d)
+![Healthcare UI Screenshot 13](https://github.com/user-attachments/assets/29e3d1bb-dc08-43fc-b3db-af8fdde2ad1a)
 
 ## Table of Contents
 
