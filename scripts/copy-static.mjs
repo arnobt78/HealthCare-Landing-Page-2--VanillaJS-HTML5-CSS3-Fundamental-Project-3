@@ -41,5 +41,11 @@ rootFiles.forEach((name) => {
   if (fs.existsSync(src)) fs.copyFileSync(src, path.join(dist, name));
 });
 
+for (const name of fs.readdirSync(root)) {
+  if (name.startsWith("blog-") && name.endsWith(".html")) {
+    fs.copyFileSync(path.join(root, name), path.join(dist, name));
+  }
+}
+
 copyDir(path.join(root, "public"), path.join(dist, "public"));
 copyDir(path.join(root, "assets"), path.join(dist, "assets"));
