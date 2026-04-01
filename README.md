@@ -20,6 +20,14 @@ A responsive, modern health care website built with HTML, CSS, and JavaScript. I
 
 ---
 
+## Project Summary
+
+This project is a multi-page, framework-free healthcare UI built with vanilla HTML, CSS, and JavaScript. It includes reusable shared layout components (header/footer), page-specific sections for services, departments, blog, and contact, plus responsive behavior and interactive UI patterns such as filters, tabs, accordions, and hover states.
+
+The codebase is structured to stay beginner-friendly while still demonstrating practical front-end patterns: centralized data, reusable render helpers, clean section-based styling, and deployment-ready setup for static hosting.
+
+---
+
 ## Features
 
 - Responsive navigation bar with burger menu for mobile
