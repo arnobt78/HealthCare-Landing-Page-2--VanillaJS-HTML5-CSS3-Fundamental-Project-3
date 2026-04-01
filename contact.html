@@ -1,43 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthcare Pro | Contact</title>
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body data-page="contact.html">
     <div id="site-header"></div>
     <main>
-      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=80');">
+      <section
+        class="page-hero page-hero--home-style"
+        style="
+          --page-hero-image: url(&quot;https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=80&quot;);
+        "
+      >
         <div class="page-hero-content reveal">
           <p class="eyebrow">Reach Out Anytime</p>
           <h1 class="section-title">Contact & Appointment</h1>
+          <p>
+            Need support or a specialist visit? Reach our care team quickly and
+            schedule with confidence.
+          </p>
+          <div class="btn-row">
+            <span class="cta-shine-wrap"
+              ><a class="btn ripple-btn cta-shine-button" href="services.html"
+                >Explore Services</a
+              ></span
+            >
+            <span class="cta-shine-wrap cta-shine-wrap--ghost"
+              ><a
+                class="btn btn-ghost ripple-btn cta-shine-button"
+                href="departments.html"
+                >View Departments</a
+              ></span
+            >
+          </div>
         </div>
       </section>
-      <section class="container section split">
-        <section class="panel reveal">
-        <h1 class="section-title">Contact & Appointment</h1>
-        <form class="form-grid">
-          <label>Full Name<input type="text" placeholder="Enter full name" required></label>
-          <label>Email<input type="email" placeholder="Enter email" required></label>
-          <label>Phone<input type="tel" placeholder="Enter phone number"></label>
-          <label>Department
-            <select>
-              <option>General Care</option>
-              <option>Cardiology</option>
-              <option>Dentistry</option>
-            </select>
-          </label>
-          <label class="full">Message<textarea rows="5" placeholder="Write your message"></textarea></label>
-          <button class="btn ripple-btn full cta-shine-button" type="submit">Send Request</button>
-        </form>
+      <section class="container section split contact-split">
+        <section class="panel reveal contact-form-panel">
+          <p class="eyebrow">Message our care team</p>
+          <h2 class="section-title">We are here for you!</h2>
+          <div class="btn-row pricing-badges">
+            <span class="badge">Friendly staff</span>
+            <span class="badge">Private &amp; secure</span>
+            <span class="badge">Quick follow-up</span>
+          </div>
+          <p class="section-lead section-lead--tight contact-form-lead">
+            Share a question, a visit request, or a concern—we read every
+            message and route it to the right people with care.
+          </p>
+          <form class="form-grid">
+            <label
+              >Full Name<input
+                type="text"
+                placeholder="Enter full name"
+                required
+            /></label>
+            <label
+              >Email<input type="email" placeholder="Enter email" required
+            /></label>
+            <label
+              >Phone<input type="tel" placeholder="Enter phone number"
+            /></label>
+            <label
+              >Department
+              <select>
+                <option>General Care</option>
+                <option>Cardiology</option>
+                <option>Dentistry</option>
+              </select>
+            </label>
+            <label class="full"
+              >Message<textarea
+                rows="5"
+                placeholder="Write your message"
+              ></textarea>
+            </label>
+            <button
+              class="btn ripple-btn full cta-shine-button contact-submit-btn"
+              type="submit"
+            >
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              <span>Send request</span>
+            </button>
+          </form>
         </section>
-        <aside class="reveal">
-          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80" alt="Medical clinic" loading="lazy">
+        <aside class="reveal contact-aside-wrap">
+          <div class="contact-aside-glow">
+            <img
+              class="contact-aside-img"
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80"
+              alt="Bright hospital reception desk welcoming patients"
+              loading="lazy"
+            />
+          </div>
         </aside>
+      </section>
+      <section class="container section contact-support-section">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <h2 class="section-title">Contact support options</h2>
+            <div class="btn-row pricing-badges">
+              <span class="badge">Response windows</span>
+              <span class="badge">Clear routing</span>
+              <span class="badge">Always reachable</span>
+            </div>
+            <p class="section-lead section-lead--tight">
+              Pick the channel that fits your situation—each card shows what to
+              expect and how fast we typically respond.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-grid-3">
+          <article
+            class="mini-card card--interactive reveal contact-support-card"
+          >
+            <div class="service-card-head">
+              <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+              <h3>General enquiries</h3>
+            </div>
+            <div class="btn-row pricing-badges">
+              <span class="badge">Within 24 hours</span>
+              <span class="badge">Email first</span>
+            </div>
+            <p>Response within 24 hours for non-urgent topics.</p>
+            <span class="badge">Email support</span>
+          </article>
+          <article
+            class="mini-card card--interactive reveal contact-support-card"
+          >
+            <div class="service-card-head">
+              <i class="fas fa-phone-volume" aria-hidden="true"></i>
+              <h3>Urgent assistance</h3>
+            </div>
+            <div class="btn-row pricing-badges">
+              <span class="badge">24/7</span>
+              <span class="badge">Hotline</span>
+            </div>
+            <p>Emergency routing available 24/7 via hotline.</p>
+            <span class="badge">Priority</span>
+          </article>
+          <article
+            class="mini-card card--interactive reveal contact-support-card"
+          >
+            <div class="service-card-head">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              <h3>Appointment help</h3>
+            </div>
+            <div class="btn-row pricing-badges">
+              <span class="badge">First visits</span>
+              <span class="badge">Specialists</span>
+            </div>
+            <p>Guidance for first-time visits and specialist booking.</p>
+            <span class="badge">Scheduling</span>
+          </article>
+        </div>
       </section>
     </main>
     <div id="site-footer"></div>

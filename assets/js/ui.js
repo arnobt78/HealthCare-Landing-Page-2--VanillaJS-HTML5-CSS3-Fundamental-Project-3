@@ -156,7 +156,8 @@ function setupFaq() {
       if (!answer) return;
       const open = root.classList.toggle("is-open");
       q.setAttribute("aria-expanded", String(open));
-      q.querySelector("span").textContent = open ? "-" : "+";
+      const toggle = q.querySelector(".faq-toggle");
+      if (toggle) toggle.textContent = open ? "-" : "+";
     });
   });
 }

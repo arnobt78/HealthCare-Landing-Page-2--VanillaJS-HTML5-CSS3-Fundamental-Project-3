@@ -11,20 +11,140 @@
   <body data-page="blog.html">
     <div id="site-header"></div>
     <main>
-      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=2200&q=80');">
+      <section class="page-hero page-hero--home-style" style="--page-hero-image: url('https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=2200&q=80');">
         <div class="page-hero-content reveal">
           <p class="eyebrow">Healthcare Education</p>
           <h1 class="section-title">Healthcare Education Blog</h1>
+          <p>Explore practical health topics, patient education content, and digital-care insights.</p>
+          <div class="btn-row">
+            <span class="cta-shine-wrap"><a class="btn ripple-btn cta-shine-button" href="contact.html">Ask a Question</a></span>
+            <span class="cta-shine-wrap cta-shine-wrap--ghost"><a class="btn btn-ghost ripple-btn cta-shine-button" href="services.html">Browse Services</a></span>
+          </div>
         </div>
       </section>
-      <section class="container card-grid section">
-        <article class="card reveal"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80" alt="Healthcare education" loading="lazy"><h3>Preventive Care Essentials</h3><p>Simple daily habits to improve long-term health outcomes.</p></article>
-        <article class="card reveal"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=80" alt="Doctor and patient" loading="lazy"><h3>Patient Communication</h3><p>How better communication improves trust and adherence.</p></article>
-        <article class="card reveal"><img src="https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?auto=format&fit=crop&w=1400&q=80" alt="Healthcare technology" loading="lazy"><h3>Digital Health Trends</h3><p>Emerging tools that improve efficiency and care quality.</p></article>
+      <section class="container section-head section reveal section-pad-bottom-tight">
+        <div class="section-head-text">
+          <h2 class="section-title">Latest Health Articles</h2>
+          <div class="btn-row pricing-badges">
+            <span class="badge">Patient Friendly</span>
+            <span class="badge">Clinically Reviewed</span>
+            <span class="badge">Weekly Insights</span>
+          </div>
+          <p class="section-lead section-lead--tight">Practical reads designed for patients and families with easy takeaways from clinical teams.</p>
+        </div>
       </section>
-      <section class="container section">
-        <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <section class="container card-grid section section-pad-top-tight">
+        <article class="card card--interactive reveal blog-card">
+          <div class="blog-media">
+            <img class="card-image" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80" alt="Healthcare education" loading="lazy">
+            <a class="blog-visit ripple-btn" href="blog-preventive-care.html" aria-label="Visit Preventive Care Essentials">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="service-card-head">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            <h3>Preventive Care Essentials</h3>
+          </div>
+          <p>Simple daily habits to improve long-term health outcomes.</p>
+          <ul class="showcase-list">
+            <li>Routine screening and lifestyle checklists</li>
+            <li>Early risk detection patterns to monitor</li>
+          </ul>
+          <div class="btn-row">
+            <span class="badge">Prevention</span>
+            <span class="badge">5 min read</span>
+          </div>
+        </article>
+        <article class="card card--interactive reveal blog-card">
+          <div class="blog-media">
+            <img class="card-image" src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=80" alt="Doctor and patient" loading="lazy">
+            <a class="blog-visit ripple-btn" href="blog-patient-communication.html" aria-label="Visit Patient Communication">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="service-card-head">
+            <i class="fas fa-comments" aria-hidden="true"></i>
+            <h3>Patient Communication</h3>
+          </div>
+          <p>How better communication improves trust and adherence.</p>
+          <ul class="showcase-list">
+            <li>Questions that improve consultation quality</li>
+            <li>Shared planning with families and caregivers</li>
+          </ul>
+          <div class="btn-row">
+            <span class="badge">Communication</span>
+            <span class="badge">6 min read</span>
+          </div>
+        </article>
+        <article class="card card--interactive reveal blog-card">
+          <div class="blog-media">
+            <img class="card-image" src="https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?auto=format&fit=crop&w=1400&q=80" alt="Healthcare technology" loading="lazy">
+            <a class="blog-visit ripple-btn" href="blog-digital-health-trends.html" aria-label="Visit Digital Health Trends">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="service-card-head">
+            <i class="fas fa-laptop-medical" aria-hidden="true"></i>
+            <h3>Digital Health Trends</h3>
+          </div>
+          <p>Emerging tools that improve efficiency and care quality.</p>
+          <ul class="showcase-list">
+            <li>Virtual follow-up and monitoring workflows</li>
+            <li>Better reporting speed for clinical decisions</li>
+          </ul>
+          <div class="btn-row">
+            <span class="badge">Innovation</span>
+            <span class="badge">7 min read</span>
+          </div>
+        </article>
+      </section>
+      <section class="container section panel reveal faq-panel-gap">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="btn-row pricing-badges">
+          <span class="badge">Appointments</span>
+          <span class="badge">Billing</span>
+          <span class="badge">Telehealth</span>
+        </div>
+        <p class="section-lead section-lead--tight">Quick answers to common patient concerns before booking or visiting.</p>
         <div id="faq-root"></div>
+      </section>
+      <section class="container section panel reveal">
+        <h2 class="section-title">Editor Picks</h2>
+        <div class="btn-row pricing-badges">
+          <span class="badge">Top Reads</span>
+          <span class="badge">Beginner Friendly</span>
+          <span class="badge">Actionable Tips</span>
+        </div>
+        <p class="section-lead">Handpicked highlights with practical tips, quick actions, and easy bullet takeaways.</p>
+        <div class="showcase-grid-3">
+          <article class="mini-card card--interactive">
+            <h3><i class="fas fa-heartbeat" aria-hidden="true"></i> Prevention Basics</h3>
+            <p>Daily routines that reduce avoidable health risks over time.</p>
+            <ul class="showcase-list">
+              <li>Food, sleep, hydration, and movement checklist</li>
+              <li>When to schedule baseline screening tests</li>
+            </ul>
+            <span class="badge">Starter Guide</span>
+          </article>
+          <article class="mini-card card--interactive">
+            <h3><i class="fas fa-users" aria-hidden="true"></i> Family Health</h3>
+            <p>Simple planning tips for coordinated care across family members.</p>
+            <ul class="showcase-list">
+              <li>Create a shared medication and appointment tracker</li>
+              <li>Build emergency contacts and care notes once</li>
+            </ul>
+            <span class="badge">Care Planning</span>
+          </article>
+          <article class="mini-card card--interactive">
+            <h3><i class="fas fa-map-signs" aria-hidden="true"></i> Clinic Navigation</h3>
+            <p>What to expect before, during, and after specialist appointments.</p>
+            <ul class="showcase-list">
+              <li>Prepare documents and symptom timeline beforehand</li>
+              <li>Follow-up questions to ask before discharge</li>
+            </ul>
+            <span class="badge">Visit Ready</span>
+          </article>
+        </div>
       </section>
     </main>
     <div id="site-footer"></div>

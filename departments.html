@@ -1,39 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthcare Pro | Departments</title>
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body data-page="departments.html">
     <div id="site-header"></div>
     <main>
-      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=2200&q=80');">
+      <section
+        class="page-hero page-hero--home-style"
+        style="
+          --page-hero-image: url(&quot;https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=2200&q=80&quot;);
+        "
+      >
         <div class="page-hero-content reveal">
           <p class="eyebrow">Specialized Departments</p>
           <h1 class="section-title">Department Highlights</h1>
+          <p>
+            Discover focused teams, schedules, and service strengths across key
+            clinical areas with a patient-first approach.
+          </p>
+          <div class="btn-row">
+            <span class="cta-shine-wrap"
+              ><a class="btn ripple-btn cta-shine-button" href="services.html"
+                >Explore Services</a
+              ></span
+            >
+            <span class="cta-shine-wrap cta-shine-wrap--ghost"
+              ><a
+                class="btn btn-ghost ripple-btn cta-shine-button"
+                href="contact.html"
+                >Contact Team</a
+              ></span
+            >
+          </div>
         </div>
       </section>
-      <section class="container section split">
-        <aside class="sidebar reveal">
-        <h2>Department Menu</h2>
-        <ul>
-          <li><a href="#">Pathology</a></li>
-          <li><a href="#">Radiology</a></li>
-          <li><a href="#">Cardiology</a></li>
-          <li><a href="#">Pediatrics</a></li>
-        </ul>
-        </aside>
-        <section>
-          <div class="card-grid">
-            <article class="card reveal"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1400&q=80" alt="Pathology department" loading="lazy"><h3>Pathology</h3><p>Accurate reports with quality-assured lab workflows.</p></article>
-            <article class="card reveal"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80" alt="Radiology department" loading="lazy"><h3>Radiology</h3><p>Fast imaging pipeline from scan to actionable report.</p></article>
-            <article class="card reveal"><img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=1400&q=80" alt="Pediatrics department" loading="lazy"><h3>Pediatrics</h3><p>Compassionate care tailored for children and families.</p></article>
+      <section class="container section-head section reveal section-pad-bottom-tight">
+        <div class="section-head-text">
+          <h2 class="section-title">Clinical Departments</h2>
+          <p class="section-lead section-lead--tight">
+            Explore our core units—the same card layout and filters pattern as
+            Services for a consistent experience.
+          </p>
+          <div class="btn-row">
+            <span class="badge">24/7 Emergency</span>
+            <span class="badge">Specialist Teams</span>
+            <span class="badge">Coordinated Care</span>
           </div>
-        </section>
+        </div>
+        <div class="services-filters" data-dept-filters>
+          <button
+            class="btn ripple-btn filter-pill is-active"
+            type="button"
+            data-dept-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-dept-filter="diagnostics"
+          >
+            Lab &amp; Imaging
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-dept-filter="clinical"
+          >
+            Heart &amp; Motion
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-dept-filter="patient"
+          >
+            Family &amp; Critical
+          </button>
+        </div>
+      </section>
+      <section
+        id="departments-showcase-grid"
+        class="container card-grid section section-pad-top-tight"
+      ></section>
+      <section class="container section panel reveal">
+        <p class="eyebrow">Spotlight</p>
+        <h2 class="section-title">Department Spotlight</h2>
+        <p class="section-lead">
+          A second style variant with compact cards and points to showcase UI
+          composition diversity.
+        </p>
+        <div class="showcase-grid-3">
+          <article class="mini-card reveal">
+            <h3>
+              <i class="fas fa-heartbeat" aria-hidden="true"></i> Cardiology
+            </h3>
+            <p>
+              High-priority heart care with routine follow-up and prevention.
+            </p>
+            <span class="badge">Prevention</span>
+          </article>
+          <article class="mini-card reveal">
+            <h3><i class="fas fa-x-ray" aria-hidden="true"></i> Radiology</h3>
+            <p>
+              Fast image processing and report turnaround for treatment
+              planning.
+            </p>
+            <span class="badge">Imaging</span>
+          </article>
+          <article class="mini-card reveal">
+            <h3><i class="fas fa-child" aria-hidden="true"></i> Pediatrics</h3>
+            <p>
+              Family-centric care plans with child-friendly treatment pathways.
+            </p>
+            <span class="badge">Child Health</span>
+          </article>
+        </div>
+      </section>
+      <section class="container section">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <h2 class="section-title">Department Workflow</h2>
+            <p class="section-lead section-lead--tight">
+              An additional section style with timeline-like checkpoints for
+              educational UI demonstration.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-grid-3">
+          <article class="mini-card reveal">
+            <h3>
+              <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+              Assessment
+            </h3>
+            <p>
+              Initial consultation captures concerns, symptoms, and priority
+              level.
+            </p>
+            <span class="badge">Step 1</span>
+          </article>
+          <article class="mini-card reveal">
+            <h3>
+              <i class="fas fa-stethoscope" aria-hidden="true"></i> Specialist
+              Routing
+            </h3>
+            <p>
+              Cases are routed to the appropriate department with supporting
+              diagnostics.
+            </p>
+            <span class="badge">Step 2</span>
+          </article>
+          <article class="mini-card reveal">
+            <h3>
+              <i class="fas fa-file-medical-alt" aria-hidden="true"></i>
+              Follow-up Plan
+            </h3>
+            <p>
+              Treatment plan, monitoring schedule, and patient instructions are
+              provided clearly.
+            </p>
+            <span class="badge">Step 3</span>
+          </article>
+        </div>
       </section>
     </main>
     <div id="site-footer"></div>

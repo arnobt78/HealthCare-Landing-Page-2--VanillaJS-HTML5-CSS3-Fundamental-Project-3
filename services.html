@@ -1,43 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthcare Pro | Services</title>
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body data-page="services.html">
     <div id="site-header"></div>
     <main>
-      <section class="page-hero" style="--page-hero-image: url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=2200&q=80');">
+      <section
+        class="page-hero page-hero--home-style"
+        style="
+          --page-hero-image: url(&quot;https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=2200&q=80&quot;);
+        "
+      >
         <div class="page-hero-content reveal">
           <p class="eyebrow">Healthcare Services</p>
-          <h1 class="section-title">All Clinical Services</h1>
+          <h1 class="section-title">Our Clinical<br />Services</h1>
+          <p>
+            From preventive care to specialist support, discover services
+            designed around clarity and compassion.
+          </p>
+          <div class="btn-row">
+            <span class="cta-shine-wrap"
+              ><a class="btn ripple-btn cta-shine-button" href="contact.html"
+                >Book Appointment</a
+              ></span
+            >
+            <span class="cta-shine-wrap cta-shine-wrap--ghost"
+              ><a
+                class="btn btn-ghost ripple-btn cta-shine-button"
+                href="departments.html"
+                >See Departments</a
+              ></span
+            >
+          </div>
         </div>
       </section>
-      <section class="container section-head section reveal">
-        <h1 class="section-title">All Clinical Services</h1>
-        <button class="btn ripple-btn" type="button" data-dropdown-trigger="filters">Filter Services</button>
-        <div class="dropdown" data-dropdown="filters">
-          <p class="badge">General Care</p>
-          <p class="badge">Emergency</p>
-          <p class="badge">Telehealth</p>
+      <section class="container section-head section reveal section-pad-bottom-tight">
+        <div class="section-head-text">
+          <h1 class="section-title">Let us Take Care of You</h1>
+          <p class="section-lead section-lead--tight">
+            Choose a service category to quickly explore relevant care options.
+          </p>
+          <div class="btn-row">
+            <span class="badge">General Care</span>
+            <span class="badge">Emergency</span>
+            <span class="badge">Telehealth</span>
+          </div>
+        </div>
+        <div class="services-filters" data-service-filters>
+          <button
+            class="btn ripple-btn filter-pill is-active"
+            type="button"
+            data-service-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-service-filter="general"
+          >
+            General Care
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-service-filter="emergency"
+          >
+            Emergency
+          </button>
+          <button
+            class="btn ripple-btn filter-pill"
+            type="button"
+            data-service-filter="telehealth"
+          >
+            Telehealth
+          </button>
         </div>
       </section>
-      <section id="all-services-grid" class="container card-grid section"></section>
+      <section
+        id="all-services-grid"
+        class="container card-grid section section-pad-top-tight"
+      ></section>
       <section class="container section panel reveal">
         <h2 class="section-title">Pricing Table (Demo)</h2>
+        <div class="btn-row pricing-badges">
+          <span class="badge">Starter Friendly</span>
+          <span class="badge">Family Plans</span>
+          <span class="badge">Priority Care</span>
+        </div>
+        <p class="section-lead">
+          Simple package comparison for demo purposes. Useful for practicing
+          table styling and information hierarchy.
+        </p>
+
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Plan</th><th>Features</th><th>Price</th></tr></thead>
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Features</th>
+                <th>Price</th>
+              </tr>
+            </thead>
             <tbody>
-              <tr><td>Basic Care</td><td>Consultation + Follow-up</td><td>$39</td></tr>
-              <tr><td>Family Care</td><td>Up to 4 Members</td><td>$99</td></tr>
-              <tr><td>Premium Care</td><td>Priority + Telehealth</td><td>$149</td></tr>
+              <tr>
+                <td>Basic Care</td>
+                <td>Consultation + Follow-up</td>
+                <td>$39</td>
+              </tr>
+              <tr>
+                <td>Family Care</td>
+                <td>Up to 4 Members</td>
+                <td>$99</td>
+              </tr>
+              <tr>
+                <td>Premium Care</td>
+                <td>Priority + Telehealth</td>
+                <td>$149</td>
+              </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+      <section class="container section">
+        <h2 class="section-title reveal">Service Delivery Highlights</h2>
+        <p class="section-lead reveal">
+          Different section style showcase: icon cards, concise bullets, and
+          supporting media.
+        </p>
+        <div class="showcase-grid-3">
+          <article class="card card--interactive reveal">
+            <img
+              class="card-image"
+              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=80"
+              alt="Emergency care"
+              loading="lazy"
+            />
+            <h3>
+              <i class="fas fa-ambulance" aria-hidden="true"></i> Emergency
+              Pathway
+            </h3>
+            <ul class="showcase-list">
+              <li>Rapid triage and stabilization</li>
+              <li>Specialist escalation workflow</li>
+            </ul>
+          </article>
+          <article class="card card--interactive reveal">
+            <img
+              class="card-image"
+              src="https://images.unsplash.com/photo-1576765608622-067973a79f53?auto=format&fit=crop&w=1400&q=80"
+              alt="Telehealth service"
+              loading="lazy"
+            />
+            <h3>
+              <i class="fas fa-video" aria-hidden="true"></i> Telehealth Access
+            </h3>
+            <ul class="showcase-list">
+              <li>Virtual follow-ups and check-ins</li>
+              <li>Medication and recovery guidance</li>
+            </ul>
+          </article>
+          <article class="card card--interactive reveal">
+            <img
+              class="card-image"
+              src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=80"
+              alt="Nursing coordination"
+              loading="lazy"
+            />
+            <h3>
+              <i class="fas fa-user-nurse" aria-hidden="true"></i> Coordinated
+              Nursing
+            </h3>
+            <ul class="showcase-list">
+              <li>Bedside support with empathy</li>
+              <li>Clear communication to families</li>
+            </ul>
+          </article>
         </div>
       </section>
     </main>

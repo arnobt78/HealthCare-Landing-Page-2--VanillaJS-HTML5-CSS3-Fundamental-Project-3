@@ -10,7 +10,7 @@ export function renderHeader(activePage) {
 
   return `
     <header class="site-header">
-      <div class="container nav-wrap">
+      <div class="nav-wrap">
         <a href="index.html" class="brand">
           <img src="public/favicon.ico" alt="Healthcare logo">
           <span>HealthCare Pro</span>
@@ -83,7 +83,21 @@ export function serviceCard(item, options = {}) {
       </a>
     `;
   }
-  return `<article class="card reveal">${body}</article>`;
+  return `<article class="card card--interactive reveal">${body}</article>`;
+}
+
+/** Department page grid — mirrors service card layout (image, icon+title, text, badge). */
+export function departmentShowcaseCard(item) {
+  const body = `
+      <img class="card-image" src="${item.img}" alt="${item.title} department" loading="lazy">
+      <div class="service-card-head">
+        <i class="fas ${item.icon}"></i>
+        <h3>${item.title}</h3>
+      </div>
+      <p>${item.desc}</p>
+      <span class="badge">${item.badge}</span>
+  `;
+  return `<article class="card card--interactive reveal" data-dept-category="${item.category}">${body}</article>`;
 }
 
 /** Rich department row for the home “Availability” grid (not a plain table). */
@@ -107,11 +121,15 @@ export function tableRow(cols) {
 }
 
 export function faqItem(item, idx) {
+  const badgeMarkup = item.badge ? `<span class="badge faq-question-badge">${item.badge}</span>` : "";
   return `
     <article class="faq-item reveal">
       <button class="faq-question" type="button" aria-expanded="false" data-faq="${idx}">
-        ${item.q}
-        <span>+</span>
+        <span class="faq-question-main">
+          ${badgeMarkup}
+          <span class="faq-question-text">${item.q}</span>
+        </span>
+        <span class="faq-toggle">+</span>
       </button>
       <p class="faq-answer">${item.a}</p>
     </article>
