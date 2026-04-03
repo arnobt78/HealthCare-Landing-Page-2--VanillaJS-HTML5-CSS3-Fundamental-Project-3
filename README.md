@@ -1,4 +1,4 @@
-# Framework-free Health Care Landing Page 2 - JavaScript (Vanilla), HTML5, CSS3 Fundamental Project 3 (Framework-free SPA)
+# Health Care Landing Page 2 - JavaScript (Vanilla), HTML5, CSS3 Fundamental Project 3 (Framework-free SPA)
 
 A responsive, modern health care website built with HTML, CSS, and JavaScript. It is designed for clinics, hospitals, or health-related organizations to showcase their services, departments, and contact information. The project demonstrates best practices in web design, UI/UX, and responsive layouts, making it a great learning resource for beginners and intermediate developers.
 
